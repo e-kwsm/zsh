@@ -1,4 +1,4 @@
-#compdef nm eu-nm
+#compdef nm eu-nm -P *-nm
 
 local args files variant
 

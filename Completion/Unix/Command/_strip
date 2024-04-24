@@ -1,4 +1,4 @@
-#compdef strip
+#compdef strip -P *-strip
 
 local curcontext=$curcontext state line variant ret=1
 declare -A opt_args

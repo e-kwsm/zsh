@@ -1,4 +1,4 @@
-#compdef ranlib
+#compdef ranlib -P *-ranlib
 
 _arguments \
     "(-a)-s[preferred type ToC (default)]" \

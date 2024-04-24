@@ -1,4 +1,4 @@
-#compdef strings gstrings eu-strings
+#compdef strings gstrings eu-strings -P *-linux-gnu-strings
 
 local args variant format bytes
 format='[precede each string by its byte offset in the file]:format:((d\:decimal o\:octal x\:hexadecimal))'

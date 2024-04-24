@@ -1,4 +1,4 @@
-#compdef objdump eu-objdump llvm-objdump
+#compdef objdump eu-objdump llvm-objdump -P *-objdump
 
 local curcontext="$curcontext" files variant ign ret=1
 local -a opts args state state_descr line

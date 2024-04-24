@@ -1,4 +1,4 @@
-#compdef gcc g++ cc c++ llvm-gcc llvm-g++ clang clang++ -value-,LDFLAGS,-default- -value-,CFLAGS,-default- -value-,CXXFLAGS,-default- -value-,CPPFLAGS,-default- -P gcc-* -P g++-* -P c++-*
+#compdef gcc g++ cc c++ llvm-gcc llvm-g++ clang clang++ -value-,LDFLAGS,-default- -value-,CFLAGS,-default- -value-,CXXFLAGS,-default- -value-,CPPFLAGS,-default- -P gcc-* -P g++-* -P c++-* -P *-linux-gnu*-gcc* -P *-linux-gnu*-g++*
 
 local curcontext="$curcontext" state line ret=1 expl i
 local -a args args2 warnings arch
