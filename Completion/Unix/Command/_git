@@ -2160,14 +2160,15 @@ _git-submodule () {
           _arguments -S \
             '(-q --quiet)'{-q,--quiet}'[suppress all output]' \
             '(-N --no-fetch)'{-N,--no-fetch}'[do not fetch new objects from repository]' \
-	    '(--merge --rebase)--checkout[checkout commit recorded in the superproject in the submodule on a detached HEAD]' \
-	    '(--checkout --rebase)--merge[merge commit recorded in superproject into current branch of submodule]' \
-	    '(--checkout --merge)--rebase[rebase current branch onto commit recorded in superproject]' \
-	    '--no-recommend-shallow[ignore submodule.<name>.shallow from .gitmodules]' \
+            '(--merge --rebase)--checkout[checkout commit recorded in the superproject in the submodule on a detached HEAD]' \
+            '--depth[maximum delta depth for blob and tree deltification]: :__git_guard_number "maximum delta depth"'
+            '(--checkout --rebase)--merge[merge commit recorded in superproject into current branch of submodule]' \
+            '(--checkout --merge)--rebase[rebase current branch onto commit recorded in superproject]' \
+            '--no-recommend-shallow[ignore submodule.<name>.shallow from .gitmodules]' \
             '--reference=[remote repository to clone]: :__git_any_repositories' \
             '--recursive[traverse submodules recursively]' \
             '--remote[use the status of the submodule''s remote-tracking branch]' \
-            '--force[discard local changes by checking out the current up-to-date version]' \
+            '(-f --force)'{-f,--force}'[discard local changes by checking out the current up-to-date version]' \
             '--init[initialize uninitialized submodules]' \
             '--single-branch[clone only one branch]' \
             '--filter=[apply partial clone filter to the submodule]:filter' \
