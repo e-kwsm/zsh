@@ -1,4 +1,4 @@
-#compdef ranlib
+#compdef ranlib llvm-ranlib
 
 _arguments \
     "(-a)-s[preferred type ToC (default)]" \
