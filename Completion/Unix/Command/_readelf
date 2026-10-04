@@ -1,4 +1,4 @@
-#compdef readelf eu-readelf
+#compdef readelf eu-readelf llvm-readelf
 
 local variant args sections
 
